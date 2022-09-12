@@ -28,9 +28,19 @@
 }
 
 .menu {
+  // border: 1px solid black;
   display: inline-block;
-  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
   height: 100px;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+  }
 }
 
 .title {

@@ -28,8 +28,8 @@ export default function MenuId({ menu }) {
   return (
     <div className={styles.body}>
       <main className={styles.main}>
-        <h1 className={styles.title}>{menu.title}</h1>
-        <p className={styles.publishedAt}>{menu.publishedAt}</p>
+        {/* <h1 className={styles.title}>{menu.title}</h1> */}
+        {/* <p className={styles.publishedAt}>{menu.publishedAt}</p> */}
         <div dangerouslySetInnerHTML={{ __html: `${menu.body}` }}></div>
         <Link href="/">
           <div>
