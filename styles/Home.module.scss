@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  // border: 5px solid red;
 }
 
 .main {
@@ -15,9 +16,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+  // border: 5px solid black;
 }
 
 .menuTitle {
+  // border: 5px solid orange;
   padding: 1rem;
   margin: 0.5rem;
   list-style: none;
@@ -38,26 +41,30 @@
   margin-bottom: 40px;
 }
 
-.post > h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 40px 0 20px;
-  background-color: #eee;
-  padding: 10px 20px;
-  border-radius: 5px;
+.post {
+  & > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    background-color: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  & > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  & > p {
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+  }
+
+  & > ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
 }
-.post > h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 40px 0 16px;
-  border-bottom: 1px solid #ddd;
-}
-.post > p {
-  line-height: 1.8;
-  letter-spacing: 0.2px;
-}
-.post > ol {
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-/*# sourceMappingURL=Home.module.css.map */
