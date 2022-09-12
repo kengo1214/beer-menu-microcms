@@ -29,4 +29,8 @@
   margin-top: 1rem;
   padding: 1rem;
 }
+.button:hover {
+  background: black;
+  color: white;
+}
 /*# sourceMappingURL=menu.module.css.map */
