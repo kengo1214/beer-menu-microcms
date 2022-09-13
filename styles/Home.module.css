@@ -9,12 +9,19 @@
 
 .main {
   width: 960px;
-  height: 200px;
+  height: 400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  border: 5px solid black;
+}
+
+.menuBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuTitle {

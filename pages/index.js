@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "menu" });
+  // console.log(data);
   return {
     props: {
       menu: data.contents,
@@ -15,15 +16,19 @@ export const getStaticProps = async () => {
 export default function Home({ menu }) {
   return (
     <div className={styles.home}>
-      <h1>ドリンクメニュー</h1>
       <div className={styles.main}>
-        {menu.map((menu) => (
-          <li className={styles.menuTitle} key={menu.id}>
-            <Link href={`menu/${menu.id}`}>
-              <a className={styles.menu} href="">{menu.title}</a>
-            </Link>
-          </li>
-        ))}
+        <h1>ドリンクメニュー</h1>
+        <div className={styles.menuBox}>
+          {menu.map((menu) => (
+            <li className={styles.menuTitle} key={menu.id}>
+              <Link href={`menu/${menu.id}`}>
+                <a className={styles.menu} href="">
+                  {menu.title}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </div>
       </div>
     </div>
   );
